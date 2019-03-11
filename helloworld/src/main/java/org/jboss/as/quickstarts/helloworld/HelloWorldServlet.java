@@ -56,8 +56,8 @@ public class HelloWorldServlet extends HttpServlet {
         PrintWriter writer = resp.getWriter();
         writer.println(PAGE_HEADER);
         writer.println("<h1>" + helloService.createHelloMessage("World") + ", java version is: "+ System.getProperty("java.version")+ "</h1>");
-	writer.println("<h1>Java Home is: "+ System.getProperty("java.home")+"</h1>");
-	writer.println("<h1>Java Vendor is: "+System.getProperty("java.vendor")+"</h1>");
+        writer.println("<h1>Java Home is: "+ System.getProperty("java.home")+"</h1>");
+        writer.println("<h1>Java Vendor is: "+System.getProperty("java.vendor")+"</h1>");
         writer.println(PAGE_FOOTER);
         writer.close();
     }
